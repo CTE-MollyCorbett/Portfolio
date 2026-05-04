@@ -16,18 +16,20 @@
         White:         #FFFFFF
         Dark text:     #1A2B45
 ----------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 :root {
     /* Colors */
     --prime-blue: #00539A;
     --prime-green: #008762;
     --gold: #FFD66B;
     --white: #FFFFFF;
-    --pastel-green: #93A4CF;
+    --pastel-blue: #93A4CF;
     --pastel-green: #92C3B2;
     /* Typography */
     --text: #1A2B45;
     --main-font: 'EB Garamond', Garamond, serif;
     --bold-font: 'Oswald', Arial, sans-serif;
+    --reg-font: 'Elms Sans' Arial, sans-serif;
     /* Spacing Scale */
     --small: 0.75rem;
     --medium: 1.5rem;
@@ -105,6 +107,7 @@ header {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+    font-family: var(--bold-font);
 }
 
 /* Dark overlay on the hero image for text readability */
@@ -123,69 +126,114 @@ header {
     text-align: center;
     color: var(--white);
     z-index: 1;
-    padding: 2rem;
+    padding-top: 15rem;
 }
 
 .hero-content h1 {
-     /* TODO */ ;
+     font-size: 3.5rem;
+     margin-bottom: 0.5rem;
+     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
-
 .hero-content p {
-     /* TODO */ ;
+     font-size: 1.4rem;
+     color: var(--gold);
+     margin-bottom: 1.5rem;
 }
 
 .btn {
-     /* TODO */ ;
+     display: inline-block;
+     background-color: var(--gold);
+     color: var(--prime-blue);
+     padding: 0.8rem 2rem;
+     border-radius: 4px;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 1.1rem;
+     transition: background-color 0.5s;
 }
 
 .btn:hover {
-     /* TODO */ ;
+     background-color: var(--pastel-green);
 }
 
 /* ===============================================
     MAIN CONTENT SECTIONS
     =============================================== */
 main {
-     /* TODO */ ;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 2rem;
+     font-family: var(--reg-font);
 }
 
+main p {
+     margin-bottom: 1rem;
+}
+
+main #about p {
+     max-width: 800px;
+}
+
+/* main #about p:first-child {
+     font-weight: 700px;
+} */
+
 section {
-     /* TODO */ ;
+     padding: 4rem 0;
+     border-bottom: 2px solid var(--pastel-blue);
 }
 
 section:last-child {
-     /* TODO */ ;
+     border-bottom: none;
 }
 
 .section-title {
-     /* TODO */ ;
+     font-size: 2rem;
+     color: var(--prime-blue);
+     margin-bottom: 0.5rem;
+     padding-bottom: 0.5rem;
+     border-left: 5px solid var(--prime-green);
+     padding-left: 1rem;
 }
 
 .section-subtitle {
-     /* TODO */ ;
+     color: #666;
+     margin-bottom: 2rem;
+     font-style: italic;
 }
 
 /* ===============================================
     COURSES GRID — What I Learned
     =============================================== */
 .courses-grid {
-     /* TODO */ ;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     margin-top: 1.5rem;
 }
 
 .course-card {
-     /* TODO */ ;
+     flex: 1 1 220px;
+     background-color: var(--white);
+     border: 2px solid var(--pastel-blue);
+     border-top: 5px solid var(--prime-green);
+     border-radius: 6px;
+     padding: 1.5rem;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .course-card h3 {
-     /* TODO */ ;
+     color: var(--prime-blue);
+     margin-bottom: 0.75rem;
 }
 
 .course-card ul {
-     /* TODO */ ;
+     padding-left: 1.2rem;
 }
 
 .course-card li {
-     /* TODO */ ;
+     margin-bottom: 0.4rem;
+     font-size: 0.95rem;
 }
 
 /* ===============================================
